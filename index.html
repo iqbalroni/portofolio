@@ -16,7 +16,14 @@
   </head>
   <body data-spy="scroll" data-target="#scroll-ku" data-offset="1">
 
-    <!-- effect -->
+    <div class="loading" id="loading">
+      <div class="putaran">
+          <div class="load"></div>
+      </div>
+    </div>
+
+    <div class="sc" id="content">
+      <!-- effect -->
     <div class="effect-wrap">
       <div class="effect effect-1">
       </div>
@@ -153,16 +160,19 @@
                                 <div class="col-sm-4">
                                   <div class="box">
                                     <img src="img/my works/satu.jpg" class="img-fluid">
+                                    <a href="" class="btn text-center"><i class="fas fa-eye"></i></a>
                                   </div>
                                 </div>
                                 <div class="col-sm-4">
                                   <div class="box">
                                     <img src="img/my works/lima.jpg" class="img-fluid">
+                                    <a href="" class="btn text-center"><i class="fas fa-eye"></i></a>
                                   </div>
                                 </div>
                                 <div class="col-sm-4">
                                   <div class="box">
                                     <img src="img/my works/tiga.jpg" class="img-fluid">
+                                    <a href="" class="btn text-center"><i class="fas fa-eye"></i></a>
                                   </div>
                                 </div>
                               </div>
@@ -170,20 +180,24 @@
                                 <div class="col-sm-4">
                                   <div class="box">
                                     <img src="img/my works/empat.jpg" class="img-fluid">
+                                    <a href="" class="btn text-center"><i class="fas fa-eye"></i></a>
                                   </div>
                                 </div>
                                 <div class="col-sm-4">
                                   <div class="box">
                                     <img src="img/my works/dua.jpg" class="img-fluid">
+                                    <a href="" class="btn text-center"><i class="fas fa-eye"></i></a>
                                   </div>
                                 </div>
                                 <div class="col-sm-4">
                                   <div class="box">
                                     <img src="img/my works/enam.jpg" class="img-fluid">
+                                    <a href="" class="btn text-center"><i class="fas fa-eye"></i></a>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            
                         </div>
                       </div>
                     </div>
@@ -210,7 +224,7 @@
                             <div class="isi"></div>
                             </div>
                             <div class="maps">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37595.09958577048!2d113.80599419786905!3d-7.926571771429856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6dcdcd94f074d%3A0xe056035859f6e572!2sBondowoso%2C%20Bondowoso%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1619514948515!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37595.09958577048!2d113.80599419786905!3d-7.926571771429856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6dcdcd94f074d%3A0xe056035859f6e572!2sBondowoso%2C%20Bondowoso%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1619514948515!5m2!1sen!2sid" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
 
                             <h5 class="title">CONTACT ME</h5>
@@ -237,7 +251,7 @@
                               <div class="form-group">
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                               </div>
-                              <button class="btn">Send Message</button>
+                              <button class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
                             </form>
                         </div>
                       </div>
@@ -268,9 +282,17 @@
               </div>
         </div>
     </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <script>
+      var content = document.getElementById('content');
+      var loading = document.getElementById('loading');
+      window.addEventListener('load',function(){
+        loading.style.display = "none";
+        content.style.display = "block";
+      });
+    </script>
   </body>
 </html>

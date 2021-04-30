@@ -224,6 +224,32 @@ body {
     box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
 }
 
+.content-portofolio .box {
+    transition: 2s;
+}
+
+.content-portofolio .box .btn {
+    display: none;
+}
+
+.content-jumbotron .box:hover img {
+    filter: blur(2px);
+    transition: 0.5s;
+}
+
+.content-portofolio .box:hover .btn {
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.content-portofolio .box .btn i {
+    color: #343434;
+    font-size: 25px;
+}
+
 /* end-portofolio */
 
 
@@ -546,4 +572,47 @@ form {
 
 #creative {
     width: 90%;
+}
+
+/* loading */
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.putaran {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #2c2d30;
+    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
+    animation: spin 5s linear infinite;
+}
+
+.sc {
+    display: none;
+}
+
+@keyframes besar {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        /* transform: scale(100%); */
+        transform: rotate(340deg);
+    }
 }
