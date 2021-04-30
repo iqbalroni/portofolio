@@ -574,34 +574,6 @@ form {
     width: 90%;
 }
 
-/* loading */
-
-.loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.putaran {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.load {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: #2c2d30;
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
-    animation: spin 5s linear infinite;
-}
-
 .sc {
     display: none;
 }
