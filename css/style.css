@@ -445,7 +445,7 @@ form {
 }
 
 .effect-wrap .effect {
-    position: absolute;
+    position: fixed;
     z-index: 2;
 }
 
@@ -503,6 +503,23 @@ form {
     left: -70px;
     top: -45px;
     opacity: 0.5;
+}
+
+.effect-5 {
+    width: 80px;
+    height: 80px;
+    right: 60%;
+    top: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 8s linear infinite;
+}
+
+.effect-5 div {
+    width: 3px;
+    background-color: #e6ae9d;
 }
 
 @keyframes spin {
