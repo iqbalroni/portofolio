@@ -1,0 +1,126 @@
+/* (1.color) */
+
+/* background-color */
+[data-theme="dark"],
+[data-theme="dark"] .body-jumbotron {
+    background-color: #a4b0e3;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb,
+[data-theme="dark"] ::-webkit-scrollbar,
+[data-theme="dark"] .content-jumbotron,
+[data-theme="dark"] .content-about .card,
+[data-theme="dark"] .content-contact iframe,
+[data-theme="dark"] .content-contact .form-group input,
+[data-theme="dark"] .content-contact .form-group textarea,
+[data-theme="dark"] .content-contact .btn,
+[data-theme="dark"] .navbar-jumbotron,
+[data-theme="dark"] .navbar-jumbotron a,
+[data-theme="dark"] .navbar-jumbotron .btn:hover,
+[data-theme="dark"] .navbar-jumbotron .active,
+[data-theme="dark"] .copyright,
+[data-theme="dark"] .setting {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+[data-theme="dark"] .content-home .garis .isi,
+[data-theme="dark"] .content-about .value,
+[data-theme="dark"] .content-about .garis .isi,
+[data-theme="dark"] .content-portofolio .garis .isi,
+[data-theme="dark"] .content-contact .garis .isi,
+[data-theme="dark"] .content-blog .garis .isi {
+    background-color: #6375be;
+}
+
+/* end-background */
+
+/* shadow */
+[data-theme="dark"] .content-jumbotron,
+[data-theme="dark"] .content-about .card,
+[data-theme="dark"] .content-portofolio .gambar img,
+[data-theme="dark"] .content-contact iframe,
+[data-theme="dark"] .navbar-jumbotron {
+    box-shadow: #8c99cf 3px 3px 4px 0px, #b6c0ee -3px -3px 2px 0px;
+}
+
+[data-theme="dark"] .content-home .garis,
+[data-theme="dark"] .content-about .garis,
+[data-theme="dark"] .content-portofolio .garis,
+[data-theme="dark"] .content-contact .garis,
+[data-theme="dark"] .content-blog .garis,
+[data-theme="dark"] .content-about .value-garis,
+[data-theme="dark"] .border-card,
+[data-theme="dark"] .content-portofolio .gambar .box,
+[data-theme="dark"] .maps {
+    box-shadow: #8c99cf 3px 3px 4px 0px inset, #b6c0ee -3px -3px 2px 0px inset;
+}
+
+[data-theme="dark"] .content-home .social a i {
+    box-shadow: #8c99cf 3px 3px 4px 0px, #b6c0ee -2px -2px 2px 0px;
+}
+
+[data-theme="dark"] .content-home .social a i:hover {
+    box-shadow: #8c99cf 3px 3px 4px 0px inset, #b6c0ee -2px -2px 2px 0px inset;
+}
+
+[data-theme="dark"] .content-about .value {
+    box-shadow: #6375be 3px 3px 4px 0px inset, #b6c0ee -3px -3px 5px 0px inset;
+}
+
+[data-theme="dark"] .content-contact .form-group input,
+[data-theme="dark"] .content-contact .form-group textarea,
+[data-theme="dark"] .content-contact .btn,
+[data-theme="dark"] .navbar-jumbotron .card-img-top,
+[data-theme="dark"] .navbar-jumbotron a,
+[data-theme="dark"] .setting {
+    box-shadow: #8c99cf 2px 3px 2px 0px, #b6c0ee -2px -1px 2px 0px;
+}
+
+[data-theme="dark"] .content-contact input:hover,
+[data-theme="dark"] .content-contact textarea:hover,
+[data-theme="dark"] .content-contact .btn:hover,
+[data-theme="dark"] .navbar-jumbotron .btn:hover,
+[data-theme="dark"] .navbar-jumbotron .active,
+[data-theme="dark"] .copyright,
+[data-theme="dark"] .setting:hover {
+    box-shadow: #8c99cf 2px 3px 2px 0px inset, #b6c0ee -2px -1px 2px 0px inset;
+}
+
+/* end shadow */
+
+/* font */
+[data-theme="dark"] .content-home,
+[data-theme="dark"] .content-home .social a,
+[data-theme="dark"] .content-about,
+[data-theme="dark"] .content-about .card b,
+[data-theme="dark"] .content-jumbotron,
+[data-theme="dark"] .content-contact,
+[data-theme="dark"] .content-contact .form-group input,
+[data-theme="dark"] .content-contact .form-group textarea,
+[data-theme="dark"] .navbar-jumbotron,
+[data-theme="dark"] .navbar-jumbotron a,
+[data-theme="dark"] .copyright,
+[data-theme="dark"] .setting {
+    color: #494949;
+}
+
+[data-theme="dark"] .content-home p,
+[data-theme="dark"] .content-about .front,
+[data-theme="dark"] .navbar-jumbotron p,
+[data-theme="dark"] .content-about .card h5,
+[data-theme="dark"] .content-contact input::-webkit-input-placeholder,
+[data-theme="dark"] .content-contact textarea::-webkit-input-placeholder,
+[data-theme="dark"] .navbar-jumbotron .btn i,
+[data-theme="dark"] .navbar-jumbotron .btn:hover,
+[data-theme="dark"] .navbar-jumbotron .active,
+[data-theme="dark"] .setting:hover i {
+    color: #797676;
+}
+
+[data-theme="dark"] .content-home .social a i:hover,
+[data-theme="dark"] .content-contact .btn,
+[data-theme="dark"] .navbar-jumbotron .btn:hover i,
+[data-theme="dark"] .navbar-jumbotron .active i {
+    color: #6375be;
+}

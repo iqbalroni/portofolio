@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- darkmode -->
+    <link rel="stylesheet" href="css/light.css">
+
     <style>
       /* loading */
 
@@ -42,6 +45,7 @@
           animation: spin 5s linear infinite;
       }
     </style>
+
     <title>Mochammad Iqbal Roni</title>
   </head>
   <body data-spy="scroll" data-target="#scroll-ku" data-offset="1">
@@ -78,9 +82,11 @@
     </div>
     <!-- end-effect -->
 
-    <div class="setting">
-      <i class="fas fa-cog fa-2x "></i>
-    </div>
+    <label class="custom-control-label" for="darkSwitch">
+      <div class="setting">
+        <i class="fas fa-sun fa-2x "></i>
+      </div>
+    </label>
 
     <div class="jumbotron body-jumbotron">
         <div class="container">
@@ -232,7 +238,15 @@
                                 </div>
                               </div>
                             </div>
-                            
+                            <div class="work">
+                              <div class="border-jam">
+                                <div class="jam">
+                                  <div class="hours"></div>
+                                  <div class="menit"></div>
+                                  <div class="detik"></div>
+                                </div>
+                              </div>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -307,6 +321,11 @@
                                 <a href="#blog" class="btn btn-lg btn-block nav-link">BLOG <i class="fas fa-books"></i></a>
                                 <a href="#contact" class="btn btn-lg btn-block nav-link">CONTACT <i class="fas fa-phone"></i></a>
                               </nav>
+                              
+                              <div class="custom-control custom-switch ml-auto" data-toggle="tooltip" data-placement="bottom" title="Mode Gelap">
+                                <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                              </div>
+
                             </div>
                           </div>
                         </div>
@@ -321,6 +340,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/dark-mode-switch.min.js"></script>
     <script>
       var content = document.getElementById('content');
       var loading = document.getElementById('loading');

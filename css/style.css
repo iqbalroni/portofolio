@@ -5,18 +5,142 @@
 
 body {
     overflow-x: hidden;
-    background-color: #2c2d30;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: #2c2d30;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #232627;
     border-radius: 30px;
 }
+
+/* (1.color) */
+
+/* background-color */
+body,
+::-webkit-scrollbar,
+.body-jumbotron,
+.content-jumbotron,
+.content-about .card,
+.content-contact iframe,
+.content-contact .form-group input,
+.content-contact .form-group textarea,
+.content-contact .btn,
+.navbar-jumbotron,
+.navbar-jumbotron a,
+.navbar-jumbotron .btn:hover,
+.navbar-jumbotron .active,
+.copyright,
+.setting {
+    background-color: #2c2d30;
+}
+
+.content-home .garis .isi,
+.content-about .value,
+.content-about .garis .isi,
+.content-portofolio .garis .isi,
+.content-contact .garis .isi,
+.content-blog .garis .isi {
+    background-color: #f9c90f;
+}
+
+/* end-background */
+
+/* shadow */
+.content-jumbotron,
+.content-about .card,
+.content-portofolio .gambar img,
+.content-contact iframe,
+.navbar-jumbotron {
+    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
+}
+
+.content-home .garis,
+.content-about .garis,
+.content-portofolio .garis,
+.content-contact .garis,
+.content-blog .garis,
+.content-about .value-garis,
+.border-card,
+.content-portofolio .gambar .box,
+.maps {
+    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
+}
+
+.content-home .social a i {
+    box-shadow: #232627 3px 3px 4px 0px, #343434 -2px -2px 2px 0px;
+}
+
+.content-home .social a i:hover {
+    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -2px -2px 2px 0px inset;
+}
+
+.content-about .value {
+    box-shadow: #f9c90f 3px 3px 4px 0px inset, #464646 -3px -3px 5px 0px inset;
+}
+
+.content-contact .form-group input,
+.content-contact .form-group textarea,
+.content-contact .btn,
+.navbar-jumbotron .card-img-top,
+.navbar-jumbotron a,
+.setting {
+    box-shadow: #232627 2px 3px 2px 0px, #343434 -2px -1px 2px 0px;
+}
+
+.content-contact input:hover,
+.content-contact textarea:hover,
+.content-contact .btn:hover,
+.navbar-jumbotron .btn:hover,
+.navbar-jumbotron .active,
+.copyright,
+.setting:hover {
+    box-shadow: #232627 2px 3px 2px 0px inset, #343434 -2px -1px 2px 0px inset;
+}
+
+/* end shadow */
+
+/* font */
+.content-home,
+.content-home .social a,
+.content-about,
+.content-about .card b,
+.content-jumbotron,
+.content-contact,
+.content-contact .form-group input,
+.content-contact .form-group textarea,
+.navbar-jumbotron,
+.navbar-jumbotron a,
+.copyright,
+.setting {
+    color: #eaecee;
+}
+
+.content-home p,
+.content-about .front,
+.navbar-jumbotron p,
+.content-about .card h5,
+.content-contact input::-webkit-input-placeholder,
+.content-contact textarea::-webkit-input-placeholder,
+.navbar-jumbotron .btn i,
+.navbar-jumbotron .btn:hover,
+.navbar-jumbotron .active,
+.setting:hover i {
+    color: #babcbe;
+}
+
+.content-home .social a i:hover,
+.content-contact .btn,
+.navbar-jumbotron .btn:hover i,
+.navbar-jumbotron .active i {
+    color: #f9c90f;
+}
+
+/* end-font */
+
+/* end-color */
 
 .content {
     padding-top: 100px;
@@ -27,15 +151,12 @@ body {
 .body-jumbotron {
     padding: 0;
     margin: 0;
-    background-color: #2c2d30;
     border-radius: 0;
 }
 
 .content-jumbotron {
-    background-color: #2c2d30;
     border: none;
     border-radius: 30px;
-    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 0px 0px;
     opacity: 0;
     display: none;
 }
@@ -47,7 +168,6 @@ body {
 
 /* home */
 .content-home {
-    color: #eaecee;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -67,11 +187,6 @@ body {
 .navbar-jumbotron p {
     letter-spacing: 3px;
     font-size: 17px;
-    color: #babcbe;
-}
-
-.content-home .social a {
-    color: #eaecee;
 }
 
 .content-home .social a i {
@@ -79,13 +194,7 @@ body {
     font-size: 25px;
     padding: 10px;
     border-radius: 50%;
-    box-shadow: #232627 3px 3px 4px 0px, #343434 -2px -2px 2px 0px;
     transition: 0.5s;
-}
-
-.content-home .social a i:hover {
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -2px -2px 2px 0px inset;
-    color: #f9c90f;
 }
 
 .content-home .garis {
@@ -93,7 +202,6 @@ body {
     width: 20%;
     height: 10px;
     border-radius: 50px;
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,16 +211,12 @@ body {
     width: 30%;
     height: 50%;
     border-radius: 50px;
-    background-color: #f9c90f;
 }
 
 /* end-home */
 
 
 /* about */
-.content-about {
-    color: #eaecee;
-}
 
 .content-about .title,
 .content-portofolio .title,
@@ -135,7 +239,6 @@ body {
     width: 10%;
     height: 10px;
     border-radius: 50px;
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
     display: flex;
     align-items: center;
 }
@@ -149,7 +252,6 @@ body {
     width: 100%;
     height: 10px;
     border-radius: 50px;
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
     display: flex;
     align-items: center;
 }
@@ -164,30 +266,20 @@ body {
 .content-about .value {
     height: 100%;
     border-radius: 100px;
-    background-color: #f9c90f;
-    box-shadow: #f9c90f 3px 3px 4px 0px inset, #464646 -3px -3px 5px 0px inset;
 }
 
 .border-card {
     margin-top: 10px;
     padding: 8px;
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
     border-radius: 15px;
 }
 
 .content-about .card h5 {
-    color: #babcbe;
     font-weight: 400;
 }
 
-.content-about .card b {
-    color: #eaecee;
-}
-
 .content-about .card {
-    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
     border: none;
-    background-color: #2c2d30;
     border-radius: 10px;
 }
 
@@ -199,7 +291,6 @@ body {
     width: 40%;
     height: 50%;
     border-radius: 50px;
-    background-color: #f9c90f;
 }
 
 
@@ -207,21 +298,16 @@ body {
 
 
 /* portofolio */
-.content-jumbotron {
-    color: #eaecee;
-}
 
 .content-portofolio .gambar .box {
     margin-top: 30px;
     padding: 10px;
     border-radius: 35px;
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
 }
 
 .content-portofolio .gambar img {
     border-radius: 30px;
     padding: 5px;
-    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
 }
 
 .content-portofolio .box {
@@ -250,27 +336,50 @@ body {
     font-size: 25px;
 }
 
+.content-jumbotron .work {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .content-jumbotron .work .border-jam {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #2c2d30;
+    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-portofolio .work .jam {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #2c2d30;
+    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
+} */
+
+
+
 /* end-portofolio */
 
 
 
 /* contact */
-.content-contact {
-    color: #eaecee;
-}
 
 .maps {
     margin-top: 10px;
     padding: 8px;
-    box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
     border-radius: 15px;
 }
 
 .content-contact iframe {
     width: 100%;
-    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
     border: none;
-    background-color: #2c2d30;
     border-radius: 10px;
     padding: 5px;
 }
@@ -283,54 +392,29 @@ form {
     margin-top: 20px;
 }
 
-.content-contact input::-webkit-input-placeholder,
-.content-contact textarea::-webkit-input-placeholder {
-    color: #babcbe;
-}
-
 .content-contact .form-group input {
-    color: #eaecee;
     text-align: left;
     font-size: 15px;
-    background-color: #2c2d30;
     border: none;
     border-radius: 50px;
-    box-shadow: #232627 2px 3px 2px 0px, #343434 -2px -1px 2px 0px;
     transition: 0.5s;
 }
 
 .content-contact .form-group textarea {
-    color: #eaecee;
     font-size: 15px;
-    background-color: #2c2d30;
     border: none;
     border-radius: 20px;
-    box-shadow: #232627 2px 3px 2px 0px, #343434 -2px -1px 2px 0px;
     transition: 0.5s;
     height: 150px;
 }
 
 .content-contact .btn {
-    color: #f9c90f;
     text-align: left;
     font-size: 15px;
-    background-color: #2c2d30;
     border: none;
     border-radius: 50px;
-    box-shadow: #232627 2px 3px 2px 0px, #343434 -2px -1px 2px 0px;
     transition: 0.5s;
 }
-
-.content-contact input:hover,
-.content-contact textarea:hover,
-.content-contact .btn:hover {
-    box-shadow: #232627 2px 3px 2px 0px inset, #343434 -2px -1px 2px 0px inset;
-}
-
-.content-contact input:focus {
-    box-shadow: #232627 2px 3px 2px 0px inset, #343434 -2px -1px 2px 0px inset;
-}
-
 
 /* end-contact */
 
@@ -341,24 +425,17 @@ form {
 .navbar-jumbotron {
     position: relative;
     z-index: 3;
-    background-color: #2c2d30;
-    color: #eaecee;
     border: none;
     border-radius: 30px;
-    box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
 }
 
 .navbar-jumbotron .card-img-top {
     width: 150px;
     padding: 10px;
-    box-shadow: #232627 2px 2px 2px 0px, #343434 -1px -1px 2px 0px;
 }
 
 .navbar-jumbotron a {
-    color: #eaecee;
-    box-shadow: #232627 2px 3px 2px 0px, #343434 -2px -1px 2px 0px;
     transition: 1s;
-    background-color: #2c2d30;
 }
 
 .navbar-jumbotron .btn {
@@ -372,30 +449,14 @@ form {
 .navbar-jumbotron .btn i {
     float: right;
     font-size: 20px;
-    color: #babcbe;
-}
-
-.navbar-jumbotron .btn:hover,
-.navbar-jumbotron .active {
-    color: #babcbe;
-    background-color: #2c2d30;
-    box-shadow: #232627 2px 3px 2px 0px inset, #343434 -2px -1px 2px 0px inset;
-}
-
-.navbar-jumbotron .btn:hover i,
-.navbar-jumbotron .active i {
-    color: #f9c90f;
 }
 
 .copyright {
-    background-color: #2c2d30;
     width: 100%;
-    color: #eaecee;
     border-radius: 30px;
     padding: 0;
     margin: 0;
     text-align: center;
-    box-shadow: #232627 2px 2px 2px 0px inset, #343434 -1px -1px 2px 0px inset;
 }
 
 .copyright p {
@@ -414,34 +475,11 @@ form {
     top: 20px;
     right: 20px;
     border-radius: 15px;
-    background-color: #2c2d30;
-    color: #eaecee;
     cursor: pointer;
-    box-shadow: #232627 2px 2px 2px 0px, #343434 -1px -1px 2px 0px;
-}
-
-.setting:hover {
-    box-shadow: #232627 2px 2px 2px 0px inset, #343434 -1px -1px 2px 0px inset;
-}
-
-.setting:hover i {
-    color: #babcbe;
 }
 
 .setting i {
     animation: bergerak 5s ease-in-out infinite;
-}
-
-@keyframes bergerak {
-
-    0%,
-    100% {
-        transform: rotate(0);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
 }
 
 .effect-wrap .effect {
@@ -508,7 +546,7 @@ form {
 .effect-5 {
     width: 80px;
     height: 80px;
-    right: 60%;
+    right: 26%;
     top: 90%;
     display: flex;
     justify-content: space-between;
@@ -520,6 +558,18 @@ form {
 .effect-5 div {
     width: 3px;
     background-color: #e6ae9d;
+}
+
+@keyframes bergerak {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
@@ -568,6 +618,17 @@ form {
     }
 }
 
+@keyframes besar {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        /* transform: scale(100%); */
+        transform: rotate(340deg);
+    }
+}
+
 
 
 /* SKILL */
@@ -593,15 +654,4 @@ form {
 
 .sc {
     display: none;
-}
-
-@keyframes besar {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        /* transform: scale(100%); */
-        transform: rotate(340deg);
-    }
 }
