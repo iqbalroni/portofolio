@@ -13,8 +13,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- darkmode -->
-    <link rel="stylesheet" href="css/light.css">
+    <link href="css/aos.css" rel="stylesheet">
 
     <style>
       /* loading */
@@ -95,7 +94,7 @@
 
                     <!-- home -->
                     <div class="jumbotron jumbotron-fluid content-jumbotron" id="home">
-                        <div class="content-home">
+                        <div class="content-home" data-aos="fade-down">
                           <h1>M Iqbal Roni S.</h1>
                           <p>FrontEnd & BackEnd Dev</p>
                           <div class="social">
@@ -310,7 +309,7 @@
                       <div class="jumbotron jumbotron-fluid navbar-jumbotron">
                           <div class="container text-center">
                                 <img src="img/mahasiswa.jpg" class="card-img-top rounded-circle" alt="...">
-                            <h1>Iqbal Roni</h1>
+                            <h1 data-aos="fade-down">Iqbal Roni</h1>
                             <p>FrontEnd & BackEnd</p>
 
                             <div class="container">
@@ -341,12 +340,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="js/dark-mode-switch.min.js"></script>
+    <script src="js/aos.js"></script>
     <script>
       var content = document.getElementById('content');
       var loading = document.getElementById('loading');
       window.addEventListener('load',function(){
         loading.style.display = "none";
         content.style.display = "block";
+      });
+      
+      AOS.init({
+          duration: 1500,
       });
     </script>
   </body>
