@@ -40,7 +40,9 @@ body,
 .tombol,
 .tombol2,
 .isi-nav,
-.isi-nav .bulat {
+.isi-nav .bulat,
+.menuhidden a i,
+.menuhidden {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
 }
@@ -61,7 +63,8 @@ body,
 .content-about .card,
 .content-portofolio .gambar img,
 .content-contact iframe,
-.navbar-jumbotron {
+.navbar-jumbotron,
+.menuhidden {
     box-shadow: #8c99cf 3px 3px 4px 0px, #b6c0ee -3px -3px 2px 0px;
 }
 
@@ -77,11 +80,13 @@ body,
     box-shadow: #8c99cf 3px 3px 4px 0px inset, #b6c0ee -3px -3px 2px 0px inset;
 }
 
-.content-home .social a i {
+.content-home .social a i,
+.menuhidden a i {
     box-shadow: #8c99cf 3px 3px 4px 0px, #b6c0ee -2px -2px 2px 0px;
 }
 
-.content-home .social a i:hover {
+.content-home .social a i:hover,
+.menuhidden a i {
     box-shadow: #8c99cf 3px 3px 4px 0px inset, #b6c0ee -2px -2px 2px 0px inset;
 }
 
@@ -129,7 +134,8 @@ body,
 .copyright,
 .tombol,
 .tombol2,
-.isi-nav {
+.isi-nav,
+.menuhidden a i {
     color: #494949;
 }
 
@@ -142,7 +148,8 @@ body,
 .navbar-jumbotron .btn i,
 .navbar-jumbotron .btn:hover,
 .navbar-jumbotron .active,
-.setting:hover i {
+.setting:hover i,
+.menuhidden a:hover i {
     color: #797676;
 }
 
@@ -185,7 +192,9 @@ body,
 [data-theme="dark"] .tombol,
 [data-theme="dark"] .tombol2,
 [data-theme="dark"] .isi-nav,
-[data-theme="dark"] .isi-nav .bulat {
+[data-theme="dark"] .isi-nav .bulat,
+[data-theme="dark"] .menuhidden,
+[data-theme="dark"] .menuhidden a i {
     background-color: #2c2d30;
 }
 
@@ -205,7 +214,8 @@ body,
 [data-theme="dark"] .content-about .card,
 [data-theme="dark"] .content-portofolio .gambar img,
 [data-theme="dark"] .content-contact iframe,
-[data-theme="dark"] .navbar-jumbotron {
+[data-theme="dark"] .navbar-jumbotron,
+[data-theme="dark"] .menuhidden {
     box-shadow: #232627 3px 3px 4px 0px, #343434 -3px -3px 2px 0px;
 }
 
@@ -221,11 +231,13 @@ body,
     box-shadow: #232627 3px 3px 4px 0px inset, #343434 -3px -3px 2px 0px inset;
 }
 
-[data-theme="dark"] .content-home .social a i {
+[data-theme="dark"] .content-home .social a i,
+[data-theme="dark"] .menuhidden a i {
     box-shadow: #232627 3px 3px 4px 0px, #343434 -2px -2px 2px 0px;
 }
 
-[data-theme="dark"] .content-home .social a i:hover {
+[data-theme="dark"] .content-home .social a i:hover,
+[data-theme="dark"] .menuhidden a:hover i {
     box-shadow: #232627 3px 3px 4px 0px inset, #343434 -2px -2px 2px 0px inset;
 }
 
@@ -536,6 +548,7 @@ body,
 
 .content-contact iframe {
     width: 100%;
+    height: 400px;
     border: none;
     border-radius: 10px;
     padding: 5px;
@@ -624,7 +637,6 @@ form {
 .menu {
     display: flex;
     justify-content: center;
-    align-items: center;
     position: fixed;
     top: 20px;
     right: 0;
@@ -663,19 +675,20 @@ form {
     z-index: 1000;
     border-radius: 15px;
     margin-right: 10px;
-    height: 60px;
+    height: auto;
     width: 100px;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .isi-nav .bulat {
+    text-align: center;
+    line-height: 40px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 10px;
     opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -878,4 +891,87 @@ form {
 
 .sc {
     display: none;
+}
+
+.pad {
+    padding-top: 0;
+}
+
+.menuhidden {
+    display: none;
+}
+
+.isi-nav .open {
+    display: none;
+}
+
+.isi-nav .cls {
+    display: none;
+}
+
+@media screen and (max-width : 600px) {
+    .container {
+        width:
+            90%;
+    }
+
+    .isi-nav .cls {
+        display: block;
+    }
+
+    .content-home h1,
+    .content-about h1,
+    .navbar-jumbotron h1 {
+        font-size: 28px;
+    }
+
+    .content-home p,
+    .content-about .front,
+    .navbar-jumbotron p {
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+
+    .content-home .social a i {
+        margin: 10px;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    #menu-nav {
+        display: none;
+    }
+
+    .menuhidden {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .menuhidden a i {
+        margin: 10px;
+        font-size: 17px;
+        padding: 10px;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    .pad {
+        padding-top: 30px;
+    }
+
+    .content {
+        padding-top: 30px;
+    }
+
+    .content-contact iframe {
+        height: 200px;
+    }
 }

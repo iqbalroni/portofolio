@@ -18,3 +18,25 @@ back.onclick = function(){
     back.style.opacity="0";
     isi.style.display="none";
 }
+
+
+// menu navbar
+
+var open = document.getElementById('open-button');
+var close = document.getElementById('close-navbar');
+var pad = document.getElementById('pad');
+var navbar = document.getElementById('menuhidden');
+
+close.onclick = function(){
+    pad.style.padding = 0;
+    navbar.style.display = "none";
+    close.style.display = "none";
+    open.style.display = "block";
+}
+
+open.onclick = function(){
+    pad.style.paddingTop = "30px";
+    navbar.style.display = "flex";
+    close.style.display = "block";
+    open.style.display = "none";
+}
